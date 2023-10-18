@@ -48,16 +48,16 @@ STEP 6:
 import React, { useState } from 'react'; /* STEP 0 */
 
 export default function Counter() {
-  const {count, setCount} = useState(1)
+  const [count, setCount] = useState(0)
 
   const increment = () => {
-    /* STEP 4 */
+    setCount(count + 1)
   };
   const decrement = () => {
-    /* STEP 5 */
+    setCount(count - 1)
   };
   const reset = () => {
-    /* STEP 6 */
+    setCount(0)
   };
 
   const isEven = count % 2 === 0
